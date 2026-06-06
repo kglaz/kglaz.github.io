@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>Krzysztof Głaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krzysztof.glaz - Judo is my life</title>
+    <style>
+        /* Resetowanie podstawowych marginesów */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Główne ustawienia strony - centrowanie na pełnym ekranie */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9; /* Jasne, minimalistyczne tło */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
+        }
+
+        /* Kontener trzymający tekst */
+        .content-wrapper {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Główny napis krzysztof.glaz */
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem); /* Skaluje się płynnie na telefonach i monitorach */
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        /* Podpis o Judo */
+        p {
+            font-size: clamp(1rem, 3vw, 1.8rem);
+            font-weight: 600;
+            color: #cc0000; /* Czerwień nawiązująca do symboliki Judo / Japonii */
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            
+            /* Subtelna animacja wjazdu od dołu */
+            opacity: 0;
+            animation: slideUpFade 1.5s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        /* Klatki kluczowe dla animacji */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Krzysztof Głaz</h1>
-    <p>kglaz na GitHub Pages.</p>
+
+    <main class="content-wrapper">
+        <h1>krzysztof.glaz</h1>
+        <p>judo is my life</p>
+    </main>
+
 </body>
 </html>
